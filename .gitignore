@@ -1,5 +1,3 @@
-# 基于vue开发一个全局Modal对话框插件
-
 .DS_Store
 node_modules
 /dist
