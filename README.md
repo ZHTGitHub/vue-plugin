@@ -12,7 +12,7 @@ npm install
 npm run serve
 ```
 ### Example
-
+```
 _open() {
     this.$modal({
         visible: true,
@@ -26,3 +26,4 @@ _open() {
         }
     })
 }
+```
