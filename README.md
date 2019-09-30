@@ -11,21 +11,18 @@ npm install
 ```
 npm run serve
 ```
+### Example
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+_open() {
+    this.$modal({
+        visible: true,
+        title: '这里是标题',
+        content: '这里是内容...',
+        cancel() {
+            console.warn('cancel callback')
+        },
+        confirm() {
+            console.warn('confirm callback')
+        }
+    })
+}
