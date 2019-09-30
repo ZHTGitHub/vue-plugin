@@ -1,6 +1,5 @@
 # 基于vue开发一个全局Modal对话框插件
 
-# vue-plugin
 
 ## Project setup
 ```
@@ -11,7 +10,8 @@ npm install
 ```
 npm run serve
 ```
-### Example
+
+### How to use
 ```
 _open() {
     this.$modal({
