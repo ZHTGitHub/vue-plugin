@@ -13,17 +13,15 @@ npm run serve
 
 ### How to use
 ```
-_open() {
-    this.$modal({
-        visible: true,
-        title: '这里是标题',
-        content: '这里是内容...',
-        cancel() {
-            console.warn('cancel callback')
-        },
-        confirm() {
-            console.warn('confirm callback')
-        }
-    })
-}
+this.$modal({
+    visible: true,
+    title: '这里是标题',
+    content: '这里是内容...',
+    cancel() {
+        console.warn('cancel callback')
+    },
+    confirm() {
+        console.warn('confirm callback')
+    }
+})
 ```
