@@ -2,6 +2,10 @@ import ModalComponent from './Modal'
 
 const MODAL = {
     install(Vue) {
+
+        let cancelFn = function() {}
+        let confirmFn = function() {}
+
         const modalCtrl = Vue.extend(ModalComponent)
         const instance = new modalCtrl()
 
@@ -12,7 +16,18 @@ const MODAL = {
             instance.visible = item.visible
             instance.title = item.title
             instance.content = item.content
+            cancelFn = item.cancel
+            confirmFn = item.confirm
         }
+
+        Vue.prototype.$modal.cancel = function() {
+            cancelFn()
+        }
+
+        Vue.prototype.$modal.confirm = function() {
+            confirmFn()
+        }
+
     }
 }
 
