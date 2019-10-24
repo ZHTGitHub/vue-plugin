@@ -18,9 +18,9 @@
                     visible: true,
                     title: '这里是标题',
                     content: '这里是内容...',
-                    cancel() {
-                        console.warn('cancel callback')
-                    },
+                    // cancel() {
+                    //     console.warn('cancel callback')
+                    // },
                     confirm() {
                         console.warn('confirm callback')
                     }

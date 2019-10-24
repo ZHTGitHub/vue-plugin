@@ -21,11 +21,15 @@ const MODAL = {
         }
 
         Vue.prototype.$modal.cancel = function() {
-            cancelFn()
+            if(cancelFn) {
+                cancelFn()
+            }
         }
 
         Vue.prototype.$modal.confirm = function() {
-            confirmFn()
+            if(confirmFn) {
+                confirmFn()
+            }
         }
 
     }
