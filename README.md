@@ -1,16 +1,5 @@
 # 基于vue开发一个全局Modal对话框插件
 
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
 ### How to use
 ```
 this.$modal({
